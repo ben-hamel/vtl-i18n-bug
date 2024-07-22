@@ -3,7 +3,7 @@ import { render } from '@testing-library/vue'
 import LocalTranslation from '../components/LocalTranslation.vue'
 import i18n from '../i18n'
 
-test('renders translations', async () => {
+test('renders local french translations', async () => {
   i18n.global.locale.value = 'fr'
   const { getByText } = render(LocalTranslation, {
     global: {
@@ -11,10 +11,10 @@ test('renders translations', async () => {
     }
   })
 
-  expect(getByText('Bonjour - local')).toBeTruthy()
+  expect(getByText('Bonjour - Local')).toBeTruthy()
 })
 
-test('renders translations', async () => {
+test('renders local english translations', async () => {
   i18n.global.locale.value = 'en'
   const { getByText } = render(LocalTranslation, {
     global: {

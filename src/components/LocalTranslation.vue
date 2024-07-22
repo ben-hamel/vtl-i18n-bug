@@ -6,7 +6,7 @@ const { t } = useI18n({
       hello: 'Hello - local'
     },
     fr: {
-      hello: 'Bonjour - local'
+      hello: 'Bonjour - Local'
     }
   }
 })
