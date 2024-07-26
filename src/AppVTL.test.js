@@ -24,6 +24,7 @@ test('renders local english translations', async () => {
   })
 
   expect(getByText('Hello - Global')).toBeTruthy()
+  expect(getByText('Hello - local')).toBeTruthy()
 })
 
 test('renders local english translations', async () => {
